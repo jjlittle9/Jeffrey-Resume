@@ -1,0 +1,482 @@
+/* This CSS file is part of the HTML5 / CSS3 tutorial on http://www.lingulo.com */
+
+/* GLOBAL */
+body
+{
+        border-top:5px solid #0a28bd;
+        background:#3F3B3B;
+        font-family: 'Open Sans', sans-serif;
+        color:#ffffff;
+}
+
+p
+{
+        margin:5px 0;
+        line-height:25px;
+}
+
+a
+{
+        text-decoration:none;
+        color:inherit;
+        transition: color .5s ease;
+}
+
+hr
+{
+        border:0;
+        height:1px;
+        margin:20px 0;
+}
+address :hover
+{
+    color: ##07237C;   
+}
+
+
+/* HEADER */
+
+header
+{
+        position:relative;
+        width:auto;
+        max-width:900px;
+        margin: 0 auto 20px auto;
+}
+
+header h1
+{
+        margin:35px 0 0 0;
+        font-size:55px;
+        color:#07237C;
+        font-family: 'Baumans', cursive;
+        
+}
+
+.toggleMobile
+{
+        display: none;
+}
+
+/* Slideshow */
+
+.slides {width: auto; height: 350px; overflow: hidden; position: relative;}
+
+.slides img{position:absolute;animation: slides 30s infinite; opacity: 0; width: 100%; height: auto;}
+
+
+@keyframes slides {25%{opacity:1;} 40%{opacity:0;}}
+
+.slides img:nth-child(3){animation-delay:0s;}
+
+.slides img:nth-child(2){animation-delay:10s;}
+
+.slides img:nth-child(1){animation-delay:20s;}
+
+.crop {display: block; margin-left: auto; margin-right: auto; width: 50%;}
+
+/* 3 COLUMNS */
+
+#boxcontent
+{
+        width:auto;
+        max-width:900px;
+        margin:0 auto;
+        padding:70px 0 45px 0;
+}
+
+#boxcontent article
+{
+        float:left;
+        width:250px;
+        margin-right:45px;
+        font-size:14px;
+}
+
+#boxcontent article h3
+{
+        font-family: 'Open Sans', sans-serif;
+        font-size:20px;
+        margin-bottom:10px;
+        margin-left:75px;
+}
+
+#boxcontent article img
+{
+        float:left;
+}
+
+#boxcontent article p
+{
+        line-height:25px;
+        font-family: 'Open Sans', sans-serif;
+        margin-left:75px;
+}
+
+/* FOUR COLUMNS */
+
+#four_columns, #text_columns
+{
+        line-height:25px;
+        font-family: 'Open Sans', sans-serif;
+        clear:both;
+        width:auto;
+        max-width:900px;
+        margin:0 auto;
+}
+
+#four_columns h2, #text_columns h3
+{
+        font-size:20px;
+        border-bottom: 1px solid #D6D0C1;
+        padding: 20px 0;
+        margin-bottom: 20px;
+}
+
+#four_columns .quarter
+{
+        float:left;
+        margin-right:25px;
+        padding: 25px;
+}
+
+#four_columns .quarter2
+{
+        float:right;
+        margin-right:25px;
+        padding: 25px;
+}
+
+.thumb-screen
+{
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:113px;
+        background: #000 url(img/zoom.png) center center no-repeat;
+        z-index:99;
+        opacity: 0;
+        transition: opacity .5s ease;
+}
+
+.thumb-screen:hover
+{
+        opacity:0.5;
+}
+
+
+/* TWO COLUMNS */
+
+#text_columns article.column1, #text_columns .column2
+{
+        margin: 70px 0;
+        font-size:14px;
+        float:left;
+        width:auto;
+        max-width: 450px;
+}
+
+#text_columns .column2
+{
+        margin: 25px;
+}
+
+.row
+{
+        position:relative;
+        margin: 40px 0 0 50px;
+        float:right;
+        width:350px;
+}
+
+/* FOOTER */
+
+.pic
+{
+    width: 150px;
+    float: left;
+    margin-right: 15px;
+}
+
+footer
+{
+        position:relative;
+        clear:both;
+        width:auto;
+        height:350px;
+        background:#333333;
+}
+
+footer .wrapper
+{
+        line-height:25px;
+        margin: 0 auto;
+        padding-top:30px;
+        width:auto;
+        max-width:900px;
+        font-size:14px;
+}
+
+footer .wrapper .column
+{
+        font-family: 'Open Sans', sans-serif;
+        color:#ababab;
+        float:left;
+        width:280px;
+        margin-right:20px;
+}
+
+/* SLIDESHOW */
+
+.container
+{
+        width:auto;
+        margin: 0 auto;
+        position:relative;
+}
+
+/* MISC */
+.clear
+{
+        clear:both;
+}
+
+/* MEDIA QUERIES FOR A RESPONSIVE LAYOUT */
+
+@media (max-width: 1215px)
+{  
+        {
+                display:inline;
+        }
+}
+
+@media (max-width: 915px)
+{
+        #boxcontent article
+        {
+                float: none;
+                margin: 30px auto 0 auto;
+                width: 60%;
+        }
+        #spacer
+        {
+                font-size:15px;
+        }
+        #spacer
+        {
+                margin-top:19px;
+                margin-right:-385px;
+        }
+        #spacer p
+        {
+                margin-left:-370px;
+        }
+        #four_columns
+        {
+                width: 500px;
+        }
+        #four_columns #four_columns 
+        {
+                margin-top: 25px;
+        }
+        #text_columns article.column1, #text_columns .column2
+        {
+                float:none;
+                max-width: 500px;
+                margin: 50px 30px 0 30px;
+        }
+        .column2 .row
+        {
+                float:none;
+                margin:0 0 40px 50px;
+        }
+        footer .wrapper .column
+        {
+                font-size: 12px;
+                width: 230px;
+        }
+}
+
+@media (max-width: 765px)
+{
+        .container
+        {
+                height:1px;
+                top: -1500px;
+        }
+        header
+        {
+                height:120px;
+        }
+        header nav
+        {
+                right: auto;
+                bottom: auto;
+                left: 50%;
+                top:100px;
+                margin-left: -184px;
+        }
+        #spacer
+        {
+                height:100px;
+        }
+        #spacer p
+        {
+                text-align:center;
+                position:static;
+                margin: 0 auto;
+                padding:15px 0 7px 0;
+        }
+        #spacer 
+        {
+                text-align:center;
+                position:static;
+                margin: 0 auto;
+        }
+        footer
+        {
+                padding-bottom:70px;
+                height: auto;
+        }
+        footer .wrapper
+        {
+                width: 350px;
+                margin: 0 auto;
+        }
+        footer .wrapper .column
+        {
+                margin-top:30px;
+                float:none;
+                font-size: 14px;
+                width: auto;
+        }
+        footer .wrapper .social
+        {
+                display:none;
+        }
+}
+
+@media (max-width: 500px)
+{
+        header
+        {
+            margin-top: 80px;
+            text-align: center;
+        }        
+        #spacer
+        {
+                height:auto;
+                padding-bottom:15px;
+        }
+        #four_columns
+        {
+                width:auto;
+        }
+        #four_columns 
+        {
+                width: 200px;
+                float:none;
+                margin: 25px auto 0 auto;
+        }
+        #four_columns h2
+        {
+                margin: 0 30px;
+        }
+        .column2 .row
+        {
+                margin: 0 0 40px 10px;
+                width:auto;
+        }
+        footer .wrapper
+        {
+                width:auto;
+        }
+        footer .wrapper .column
+        {
+                margin: 0 auto 15px auto;
+                max-width:300px;
+        }
+        
+        #mobileMenu
+        {
+                display: block;
+                z-index: 99;
+        }
+        .toggleMobile
+        {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                display: block;
+                width: 40px;
+                height: 36px;
+                cursor: pointer;
+                z-index: 999;
+        }
+        .toggleMobile span.menu1, .toggleMobile span.menu2, .toggleMobile span.menu3
+        {
+                display: block;
+                position: absolute;
+                width: 40px;
+                height: 8px;
+                left: 0;
+                background: #EDA28C;
+                -webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+                transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+        }
+        .toggleMobile span.menu1
+        {
+                top: 0;
+        }
+        .toggleMobile span.menu2
+        {
+                top: 14px;
+        }
+        .toggleMobile span.menu3
+        {
+                top: 28px;
+        }
+        .toggleMobile.active span.menu1
+        {
+                top: 14px;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                -webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+                transition: all 0.5s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+        }
+        .toggleMobile.active span.menu2
+        {
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                -webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+                transition: all 0.5s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+        }
+        .toggleMobile.active span.menu3
+        {
+                opacity: 0;
+                -webkit-transition: opacity 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+                transition: opacity 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+        }
+        header nav
+        {
+                display:none;
+        }
+        header h1
+        {
+                font-size:40px;
+        }
+        header p
+        {
+                margin-left: 60px;
+                font-size:14px;
+        }
+}
+}
