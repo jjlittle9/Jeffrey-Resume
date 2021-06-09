@@ -1,5 +1,3 @@
-/* This CSS file is part of the HTML5 / CSS3 tutorial on http://www.lingulo.com */
-
 /* GLOBAL */
 body
 {
@@ -30,7 +28,7 @@ hr
 }
 address :hover
 {
-    color: ##07237C;   
+    color: #07237C;   
 }
 
 
@@ -48,7 +46,7 @@ header h1
 {
         margin:35px 0 0 0;
         font-size:55px;
-        color:#07237C;
+        color:#000000;
         font-family: 'Baumans', cursive;
         
 }
@@ -205,7 +203,7 @@ footer
         position:relative;
         clear:both;
         width:auto;
-        height:350px;
+        height:150px;
         background:#333333;
 }
 
@@ -244,13 +242,6 @@ footer .wrapper .column
 }
 
 /* MEDIA QUERIES FOR A RESPONSIVE LAYOUT */
-
-@media (max-width: 1215px)
-{  
-        {
-                display:inline;
-        }
-}
 
 @media (max-width: 915px)
 {
@@ -478,5 +469,4 @@ footer .wrapper .column
                 margin-left: 60px;
                 font-size:14px;
         }
-}
 }
